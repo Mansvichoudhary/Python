@@ -1,0 +1,13 @@
+print("Welcome to Castle")
+input("Press Enter to continue")
+print("To Open the Door Please Enter the Password")
+a = int(input("Enter Password"))
+
+if a%3==0 and a%5==0:
+  print("Door Opened")
+elif a%3==0:
+  print("SO CLose,Try Again")
+elif a%5==0:
+  print("So Close,Try Again")
+else:
+    print("Wrong Password")
