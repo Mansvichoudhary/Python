@@ -1,0 +1,51 @@
+#Are You an Alien?
+print("Are You An Alien?")
+print("Let's Play A Game To Confirm!")
+input("Press Enter to continue")
+
+score = 0
+#Quiz Y=yes|N=no
+print("Answer the following with Y or N:")
+print("Here Is Your 1st Question")
+print("Do You Love Dhoop! In Winter??")
+a = input("Enter Y or N:")
+if a == 'y' or a == "Y":
+    score += 1
+print("Here Is Your 2nd Question")
+print("Are You less Then 5.5 Feets")
+b = input("Enter Y or N:")
+if b == 'y' or a == "Y":
+    score += 1
+print("Here Is Your 3rd Question")
+print("Are You From Another Planet??")
+c = input("Enter Y or N:")
+if c == 'y' or a == "Y":
+    score += 1
+print("Here Is Your 4th Question")
+print("Do You Also Have Small Hands?")
+d = input("Enter Y or N:")
+if d == 'y' or a == "Y":
+    score += 1
+print("Here Is Your 5th Question")
+print("Do you like staring at the moon for long?")
+e = input("Enter Y or N:")
+if e == 'y' or a == "Y":
+    score += 1
+
+# Result
+print("\n🧬 RESULT TIME! Tumhari asli identity kya hai?\n")
+
+if score == 5:
+    print("🚨 PAKDE GAYE! 💀 Tum alien ho bhai! NASA se call aayega abhi.")
+    print("🛸 Passport ready rakhna... Jupiter bheja jaa raha hai.")
+elif score >= 3:
+    print("🤖 Suspicious ho tum! Shayad aadhe alien ho...")
+    print("🔍 CID waale tumpe nazar rakh rahe hain.")
+elif score >= 1:
+    print("😎 Normal ho, par thode se ulte ho. Masti karta hai tu!")
+    print("🌝 Full Earthling vibes with alien potential.")
+else:
+    print("😴 Tum toh bilkul basic human nikle yaar...")
+    print("🍅 Bhindi khane wale aadmi. Kya hi boring ho!")
+
+print("\n💡 TIP: Agar 5/5 aaye toh moon pe ghar lena mat bhoolna!")
