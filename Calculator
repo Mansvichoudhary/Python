@@ -1,0 +1,12 @@
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+op = input("Enter operation (+, -, *, /): ")
+
+operations = {
+    '+': a + b,
+    '-': a - b,
+    '*': a * b,
+    '/': a / b,
+}
+
+print("Result:", operations[op])
