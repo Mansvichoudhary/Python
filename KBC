@@ -1,0 +1,38 @@
+print("🎉 Welcome to KBC ")
+
+print("Aapka Agla question hai puri 2 rupee ke liye")
+input("Press Enter to continue")
+
+
+print("Q1: What is the capital of India?")
+print("a) Delhi")
+print("b) Mumbai")
+print("c) Kolkata")
+print("d) Jaipur")
+answer1 = input("Your answer (a/b/c/d): ")
+
+if answer1 == "a":
+    print("Sahi Jazab!")
+else:
+    print("Galat Jazab. The correct answer is 'Delhi'.")
+
+if answer1 == "a":
+
+  print("Q2.:Mein kon hu?")
+  print("a) Insaan")
+  print("b) Pagal Insaan")
+  print("c) Accha Insaan")
+  print("d) Buri Insaan")
+  answer2 = input("Your answer (a/b/c/d): ")
+
+  if answer2 == "b":
+    print("Sahi Jazab !")
+  elif answer2 == "c":
+    print("Itna bhi nahi aata😒")
+  elif answer2 == "a":
+    print("Abee tu jaaa ree 🤢")
+  elif answer2 == "d":
+    print("Padh le bhai ladkibaazi mein kuch nahi rakhaa 😂")
+else:
+  print("Game Over")
+
