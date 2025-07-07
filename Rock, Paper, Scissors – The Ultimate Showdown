@@ -1,0 +1,28 @@
+import random
+
+options = ['rock', 'paper', 'scissor']
+
+while True:
+    player = input("Rock, paper, or scissor? ").lower()
+    computer = random.choice(options)
+
+    if player not in options:
+        print("Invalid choice. Try again.")
+        continue
+
+    print(f"You chose: {player}")
+    print(f"Computer chose: {computer}")
+
+    if player == computer:
+        print("It's a tie!")
+    elif (player == "rock" and computer == "scissor") or \
+         (player == "scissor" and computer == "paper") or \
+         (player == "paper" and computer == "rock"):
+        print("You win! 🎉")
+    else:
+        print("Computer wins 😭")
+
+    # Ask to play again
+    play_again = input("Do you want to play again? (yes/no): ").lower()
+    if play_again != "yes":
+        break
