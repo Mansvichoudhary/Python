@@ -1,0 +1,36 @@
+grocery_list = []
+
+print("Welcome to your Grocery List!")
+print("Type 'done' to stop adding items.\n")
+
+# 1.Adding items to the list
+while True:
+    item = input("Add an item: ")
+    if item.lower() == "done":
+        break
+    grocery_list.append(item)
+    print("Updated List:", grocery_list)
+
+# 2.Add item at specific position
+print("\nLet's insert a special item at a specific position.")
+insert_item = input("Enter an item to insert at position 2: ")
+grocery_list.insert(2, insert_item)
+print("List after insert:", grocery_list)
+
+# 3.Remove a specific item
+print("\nNow let's remove something.")
+remove_item = input("Enter an item to remove: ")
+if remove_item in grocery_list:
+    grocery_list.remove(remove_item)
+    print("After removing:", grocery_list)
+else:
+    print("Item not found in list.")
+
+# Sorting the list
+print("\nSorting your grocery list...")
+grocery_list.sort()
+print("Sorted List:", grocery_list)
+
+# Final Output
+print("\n🛒 Final Grocery List:")
+print(grocery_list)
