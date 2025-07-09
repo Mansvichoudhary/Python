@@ -1,0 +1,42 @@
+print("📄 Welcome to the Marksheet Generator 📄\n")
+
+subjects = ["Maths", "Science", "English", "Computer", "Social Science"]
+number_of_students = int(input("How many students? "))
+
+for s in range(number_of_students):
+    print(f"\n🧑 Enter details for Student {s + 1}")
+
+    # details
+    student_info = []
+    student_info.append(input("Enter Roll Number: "))
+    student_info.append(input("Enter Student Name: "))
+    student_info.append(input("Enter Father's Name: "))
+    student_info.append(input("Enter Mother's Name: "))
+
+    # marks
+    marks = []
+    print("\nEnter marks out of 100:")
+    for subject in subjects:
+        score = int(input(f"{subject}: "))
+        marks.append(score)
+
+    total = sum(marks)
+    percentage = total / len(subjects)
+
+    # marksheet
+    print("\n" + "="*40)
+    print(" "*10 + "📚 STUDENT MARKSHEET 📚")
+    print("="*40)
+    print(f"Roll Number   : {student_info[0]}")
+    print(f"Name          : {student_info[1]}")
+    print(f"Father's Name : {student_info[2]}")
+    print(f"Mother's Name : {student_info[3]}")
+    print("-"*40)
+    print(f"{'Subject':<20}Marks")
+    print("-"*40)
+    for subject, mark in zip(subjects, marks):
+        print(f"{subject:<20}{mark}")
+    print("-"*40)
+    print(f"{'Total':<20}{total} / 500")
+    print(f"{'Percentage':<20}{percentage:.2f}%")
+    print("="*40)
